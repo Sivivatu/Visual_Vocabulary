@@ -20,9 +20,6 @@
 Table=`Orders$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Row ID" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\data\Sample - Superstore.xls|||`Orders$`" type="Double" />
@@ -181,7 +178,7 @@ Table=`Orders$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_e4c8360a863b42ddb92483b4cfb1dfde_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_7248_4e8a26f95df44846a560ac8f18e1d022_\Engine_13788_e7d86e4ff0d54df58e687a756e5752e2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -294,7 +291,7 @@ Table=`Orders$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_06626016a6044fa487381f96893ed596_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_7248_4e8a26f95df44846a560ac8f18e1d022_\Engine_13788_6b01a481e7484b70a1da1879be2f4602_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -344,12 +341,13 @@ Table=`Orders$`</DefaultAnnotationText>
         <Configuration>
           <FormulaFields>
             <FormulaField expression="DateTimeFormat([Order Date],'%B')" field="Order Month" size="20" type="V_String" />
+            <FormulaField expression="tonumber(DateTimeFormat([Order Date],'%Y'))" field="Order Year" size="2" type="Int16" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText><![CDATA[Order Month = DateTimeFormat([Order Date],'%B')
-]]></DefaultAnnotationText>
+          <DefaultAnnotationText>Order Month = DateTimeFormat([Order Date],'%B')
+Order Year = tonumber(DateTimeFo...</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -521,7 +519,7 @@ Table=`Orders$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_cdc21951d5f74207a072fc982c785f01_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_7248_4e8a26f95df44846a560ac8f18e1d022_\Engine_13788_d2abc313ff9448cea526bf44e6d18783_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -652,7 +650,7 @@ Table=`Orders$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_5b6f09ab65c4428b842685452d5c7295_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_7248_4e8a26f95df44846a560ac8f18e1d022_\Engine_13788_a9fd8bcdbcc04379966dd7e0320851fc_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -665,6 +663,332 @@ Table=`Orders$`</DefaultAnnotationText>
             </View1>
             <View2 />
           </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="498" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>scatter</type>
+              <mode>markers</mode>
+              <ysrc>Sum_Sales</ysrc>
+              <xsrc>Order Year</xsrc>
+              <marker>
+                <size>6</size>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+            </Traces>
+            <Traces>
+              <type>scatter</type>
+              <mode>lines</mode>
+              <fill>none</fill>
+              <xsrc>Order Year</xsrc>
+              <ysrc>Sum_Sales</ysrc>
+              <transforms json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+                <type>groupby</type>
+                <groupssrc>Sub-Category</groupssrc>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+                <groups>Accessories</groups>
+                <groups>Appliances</groups>
+                <groups>Art</groups>
+                <groups>Binders</groups>
+                <groups>Bookcases</groups>
+                <groups>Chairs</groups>
+                <groups>Copiers</groups>
+                <groups>Envelopes</groups>
+                <groups>Fasteners</groups>
+                <groups>Furnishings</groups>
+                <groups>Labels</groups>
+                <groups>Machines</groups>
+                <groups>Paper</groups>
+                <groups>Phones</groups>
+                <groups>Storage</groups>
+                <groups>Supplies</groups>
+                <groups>Tables</groups>
+              </transforms>
+            </Traces>
+            <Layout>
+              <title>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <xaxis>
+                <range>-0.72908622908622911</range>
+                <range>11.72908622908623</range>
+                <autorange>true</autorange>
+                <titlefont>
+                  <size>14</size>
+                </titlefont>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <showgrid>false</showgrid>
+              </xaxis>
+              <yaxis>
+                <range>-3499.7931967709392</range>
+                <range>61016.50219677094</range>
+                <autorange>true</autorange>
+                <showgrid>true</showgrid>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <titlefont>
+                <size>17</size>
+              </titlefont>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="390" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Order Year" action="GroupBy" rename="Order Year" />
+            <SummarizeField field="Sub-Category" action="GroupBy" rename="Sub-Category" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_7248_4e8a26f95df44846a560ac8f18e1d022_\Engine_13788_9c2bf8258fff47509614c20bd27f5aa3_.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -725,6 +1049,10 @@ Table=`Orders$`</DefaultAnnotationText>
       <Destination ToolID="10" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="13" Connection="Join" />
       <Destination ToolID="14" Connection="Input" />
     </Connection>
@@ -735,6 +1063,14 @@ Table=`Orders$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="16" Connection="Output" />
       <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
