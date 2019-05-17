@@ -51,95 +51,9 @@ Table=`Orders$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
-    <Node ToolID="2">
-      <GuiSettings Plugin="PlotlyCharting">
-        <Position x="282" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <ChartingFields>
-            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
-              <type>bar</type>
-              <mode>markers</mode>
-              <orientation>h</orientation>
-              <xsrc>Sales</xsrc>
-              <ysrc>Region</ysrc>
-              <marker>
-                <line>
-                  <width>0</width>
-                </line>
-                <cmin>1</cmin>
-                <cmax>7</cmax>
-                <cauto>true</cauto>
-                <autocolorscale>false</autocolorscale>
-                <reversescale>true</reversescale>
-                <color>#1f77b4</color>
-              </marker>
-              <hoverinfo>x+y+name</hoverinfo>
-            </Traces>
-            <Layout>
-              <title>
-              </title>
-              <font>
-                <family>sans-serif</family>
-                <size>12</size>
-              </font>
-              <showlegend>true</showlegend>
-              <hovermode>closest</hovermode>
-              <autosize>false</autosize>
-              <width>700</width>
-              <height>849</height>
-              <xaxis>
-                <range>0</range>
-                <range>8589.4231578947365</range>
-                <autorange>true</autorange>
-                <titlefont>
-                  <size>14</size>
-                </titlefont>
-                <tickfont>
-                  <size>12</size>
-                </tickfont>
-                <nticks>0</nticks>
-                <type>linear</type>
-              </xaxis>
-              <yaxis>
-                <range>-0.5</range>
-                <range>3.5</range>
-                <autorange>true</autorange>
-                <type>category</type>
-              </yaxis>
-              <legend>
-                <font>
-                  <size>12</size>
-                </font>
-                <borderwidth>0</borderwidth>
-              </legend>
-              <margin>
-                <pad>0</pad>
-                <t>100</t>
-                <b>80</b>
-                <l>80</l>
-                <r>80</r>
-              </margin>
-              <titlefont>
-                <size>17</size>
-              </titlefont>
-              <barmode>overlay</barmode>
-            </Layout>
-          </ChartingFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <AnnotationText>Unordered</AnnotationText>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
-    </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="PlotlyCharting">
-        <Position x="402" y="162" />
+        <Position x="402" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -226,7 +140,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="270" y="162" />
+        <Position x="270" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -244,7 +158,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="198" y="162" />
+        <Position x="198" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -263,11 +177,11 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="510" y="162" />
+        <Position x="510" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_15660_89c0aa10efc046af8e245e13b8537951_\Engine_13788_8b03dddf4302454d90fda1c13fae2a6a_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_e4c8360a863b42ddb92483b4cfb1dfde_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -291,7 +205,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="PlotlyCharting">
-        <Position x="414" y="234" />
+        <Position x="414" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -374,36 +288,13 @@ Table=`Orders$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
     </Node>
-    <Node ToolID="8">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="402" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_15660_89c0aa10efc046af8e245e13b8537951_\Engine_13788_7e0e80145c7448418b2088ce85adc6a1_.yxdb</TempFile>
-          <Layout>
-            <View1>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="510" y="234" />
+        <Position x="510" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_15660_89c0aa10efc046af8e245e13b8537951_\Engine_13788_f5e35c46578c42459d9456f6ea5bf28a_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_06626016a6044fa487381f96893ed596_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -427,7 +318,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="294" y="366" />
+        <Position x="306" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -447,7 +338,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="186" y="366" />
+        <Position x="198" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -466,7 +357,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="390" y="426" />
+        <Position x="402" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -485,7 +376,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="498" y="378" />
+        <Position x="510" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -516,7 +407,7 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="PlotlyCharting">
-        <Position x="618" y="378" />
+        <Position x="630" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -626,11 +517,142 @@ Table=`Orders$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="762" y="378" />
+        <Position x="774" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_15660_89c0aa10efc046af8e245e13b8537951_\Engine_13788_9deac122982c4fae88aac0919bee12e0_.yxdb</TempFile>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_cdc21951d5f74207a072fc982c785f01_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="414" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>markers</mode>
+              <orientation>h</orientation>
+              <xsrc>Sum_Sales</xsrc>
+              <ysrc>Region</ysrc>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+                <cmin>1</cmin>
+                <cmax>7</cmax>
+                <cauto>true</cauto>
+                <autocolorscale>false</autocolorscale>
+                <reversescale>true</reversescale>
+                <color>#1f77b4</color>
+              </marker>
+              <hoverinfo>x+y+name</hoverinfo>
+              <name>Bar</name>
+            </Traces>
+            <Traces>
+              <type>scatter</type>
+              <mode>markers</mode>
+              <name>lollipop</name>
+              <xsrc>Sum_Sales</xsrc>
+              <ysrc>Region</ysrc>
+              <marker>
+                <size>50</size>
+                <line>
+                  <width>0</width>
+                </line>
+                <color>rgb(31, 119, 180)</color>
+              </marker>
+            </Traces>
+            <Layout>
+              <title>Ordered Bar Chart</title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <showlegend>false</showlegend>
+              <hovermode>closest</hovermode>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <xaxis>
+                <range>0</range>
+                <range>813175.350762845</range>
+                <autorange>true</autorange>
+                <titlefont>
+                  <size>14</size>
+                </titlefont>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <showspikes>false</showspikes>
+                <type>linear</type>
+              </xaxis>
+              <yaxis>
+                <range>-0.5</range>
+                <range>3.5</range>
+                <autorange>true</autorange>
+                <showspikes>false</showspikes>
+                <type>category</type>
+              </yaxis>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <titlefont>
+                <size>17</size>
+              </titlefont>
+              <barmode>stack</barmode>
+              <bargap>0.8</bargap>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>LolliPop Chart</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="522" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_16648_f79aa1eb5e864f6e997fddd49fe1cacd_\Engine_13788_5b6f09ab65c4428b842685452d5c7295_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -656,19 +678,11 @@ Table=`Orders$`</DefaultAnnotationText>
   <Connections>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="2" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="1" Connection="Output" />
       <Destination ToolID="5" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
       <Destination ToolID="11" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="8" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="Output" />
@@ -681,6 +695,10 @@ Table=`Orders$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="4" Connection="Output" />
       <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="5" Connection="Output" />
@@ -713,6 +731,10 @@ Table=`Orders$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="14" Connection="Output" />
       <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
