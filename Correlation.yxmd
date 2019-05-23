@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">.\Data\Sample - Superstore.xls|||`Orders$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sample - Superstore.xls
+Table=`Orders$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="Double" />
+            <Field name="Order ID" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Order Date" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="DateTime" />
+            <Field name="Ship Date" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="DateTime" />
+            <Field name="Ship Mode" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Customer ID" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Segment" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Country" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="City" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="State" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Postal Code" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Product ID" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Category" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Sub-Category" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Product Name" size="255" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\paulj\OneDrive\Documents\Github\Visual_Vocabulary\Data\Sample - Superstore.xls|||`Orders$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Sub-Category" action="GroupBy" rename="Sub-Category" />
+            <SummarizeField field="Order Year" action="GroupBy" rename="Order Year" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+            <SummarizeField field="Discount" action="Avg" rename="Avg_Discount" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeYear([Order Date])" field="Order Year" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Order Year = DateTimeYear([Order Date])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="486" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>scatter</type>
+              <mode>markers</mode>
+              <xsrc>Sum_Profit</xsrc>
+              <ysrc>Sum_Sales</ysrc>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+                <sizesrc>Avg_Discount</sizesrc>
+                <size>0.0783783783783783</size>
+                <size>0.0879518072289155</size>
+                <size>0.0795698924731182</size>
+                <size>0.0719999999999999</size>
+                <size>0.164516129032258</size>
+                <size>0.179787234042553</size>
+                <size>0.142982456140351</size>
+                <size>0.176363636363636</size>
+                <size>0.073170731707317</size>
+                <size>0.0766467065868263</size>
+                <size>0.0688524590163934</size>
+                <size>0.078723404255319</size>
+                <size>0.375862068965518</size>
+                <size>0.379874213836479</size>
+                <size>0.356867469879518</size>
+                <size>0.378199999999999</size>
+                <size>0.205675675675676</size>
+                <size>0.228524590163934</size>
+                <size>0.190185185185185</size>
+                <size>0.214736842105263</size>
+                <size>0.174418604651163</size>
+                <size>0.159398496240601</size>
+                <size>0.178787878787879</size>
+                <size>0.167368421052632</size>
+                <size>0.22</size>
+                <size>0.13</size>
+                <size>0.175</size>
+                <size>0.154545454545455</size>
+                <size>0.103703703703704</size>
+                <size>0.0656716417910448</size>
+                <size>0.067741935483871</size>
+                <size>0.0873239436619719</size>
+                <size>0.104</size>
+                <size>0.0863636363636364</size>
+                <size>0.0779661016949153</size>
+                <size>0.065625</size>
+                <size>0.15</size>
+                <size>0.137</size>
+                <size>0.142412451361868</size>
+                <size>0.129113924050633</size>
+                <size>0.0657894736842106</size>
+                <size>0.077922077922078</size>
+                <size>0.0701030927835052</size>
+                <size>0.0631578947368421</size>
+                <size>0.326923076923077</size>
+                <size>0.279166666666667</size>
+                <size>0.315625</size>
+                <size>0.3</size>
+                <size>0.0820512820512819</size>
+                <size>0.063970588235294</size>
+                <size>0.0721311475409834</size>
+                <size>0.0793028322440087</size>
+                <size>0.153216374269006</size>
+                <size>0.140703517587939</size>
+                <size>0.155555555555555</size>
+                <size>0.163945578231293</size>
+                <size>0.0734463276836157</size>
+                <size>0.07953216374269</size>
+                <size>0.0704761904761904</size>
+                <size>0.0756944444444443</size>
+                <size>0.07</size>
+                <size>0.103225806451613</size>
+                <size>0.0733333333333333</size>
+                <size>0.0711864406779661</size>
+                <size>0.266901408450704</size>
+                <size>0.237068965517241</size>
+                <size>0.268023255813953</size>
+                <size>0.265384615384615</size>
+                <sizeref>0.02</sizeref>
+                <sizemode>diameter</sizemode>
+              </marker>
+              <line>
+                <width>2</width>
+              </line>
+            </Traces>
+            <Layout>
+              <title>Total Sales Vs Profit, Sized by Average Discout</title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <xaxis>
+                <range>-10646.822852613532</range>
+                <range>27283.306933282791</range>
+                <autorange>true</autorange>
+                <type>linear</type>
+              </xaxis>
+              <yaxis>
+                <range>-5885.648438304831</range>
+                <range>112146.00207543815</range>
+                <autorange>true</autorange>
+                <type>linear</type>
+                <title>Click to enter Y axis title</title>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <titlefont>
+                <size>17</size>
+              </titlefont>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\paulj\AppData\Local\Temp\Engine_24112_85b9c4d0ea3246afba084a13aee193b7_\Engine_21360_28e77f6bc7514de8b7c5b186b0eba412_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Correlation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
